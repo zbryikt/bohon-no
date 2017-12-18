@@ -25,7 +25,12 @@ if fb
   meta(property="fb:admins",content=fb.admins)
 
 if use.favicon
-    link(rel="icon",type="image/x-icon",href="#{favicon}")
+  link(rel="icon",type="image/x-icon",href="#{favicon}")
+if use.appleicon
+  link(rel="apple-touch-icon",sizes="57x57",href="assets/img/icon-57.png")
+  link(rel="apple-touch-icon",sizes="72x72",href="assets/img/icon-72.png")
+  link(rel="apple-touch-icon",sizes="114x114",href="assets/img/icon-114.png")
+  link(rel="apple-touch-icon",sizes="144x144",href="assets/img/icon-144.png")
 if use.cdn
   //- from cdn
   if lib.jquery
